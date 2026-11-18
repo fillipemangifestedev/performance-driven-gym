@@ -751,3 +751,157 @@ footer {
     color: var(--txt-color-white);
     background-color: var(--background-color-black);
 }
+
+/*================================================================================ */
+
+/* reserve.html */
+
+/* beginning-reserve */
+.beginning-reserve {
+    display: flex;
+
+    padding: 10px 0 0 20px;
+
+    width: 100%;
+
+    border-bottom: 1px solid var(--background-color-black);
+
+    background-color: var(--background-color-white);
+}
+
+/* sessions */
+.sessions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    border-bottom: 1px solid var(--background-color-black);
+}
+
+.sessions-div,
+.sessions-div-2,
+.sessions-div-3 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 37px;
+    padding: 30px 30px;
+
+    border-right: 1px solid var(--background-color-black);
+}
+
+.sessions-div-2 {
+    gap: 12px;
+}
+
+.sessions-div-3 {
+    gap: 27px;
+}
+
+.sessions-div-text,
+.sessions-div-text-2,
+.sessions-div-text-3 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+
+    width: 366px;
+}
+
+.sessions-text-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.sessions-text-text p {
+    font-size: var(--p1-font-size);
+    font-weight: var(--p1-font-weight);
+    font-family: var(--p1-font-family);
+    line-height: var(--p1-line-height);
+    letter-spacing: var(--p1-letter-spacing);
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid var(--background-color-black);
+}
+
+.sessions-p {
+    border-bottom: none !important;
+}
+
+.sessions-div button,
+.sessions-div-2 button,
+.sessions-div-3 button {
+    padding: 12px 0;
+
+    border-radius: 7.25px;
+
+    transition: 0.5s ease-in-out;
+
+    background-color: var(--background-color-blue);
+}
+
+.sessions-div button:hover,
+.sessions-div-2 button:hover,
+.sessions-div-3 button:hover {
+    color: var(--txt-color-white);
+    background-color: var(--background-color-black);
+}
+
+/* reserve-reserve */
+.reserve-reserve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    border-bottom: 1px solid var(--background-color-black);
+
+    background-color: var(--background-color-blue);
+}
+
+.reserve-reserve-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+    margin: 162px 0;
+}
+
+.reserve-reserve-text p {
+    text-align: center;
+
+    font-size: var(--p2-font-size);
+    font-weight: var(--p2-font-weight);
+    font-family: var(--p2-font-family);
+    line-height: var(--p2-line-height);
+    letter-spacing: var(--p2-letter-spacing);
+
+    width: 780px;
+}
+
+.reserve-reserve-text a {
+    padding: 12px 17px;
+
+    border-radius: 7.25px;
+
+    transition: 0.5s ease;
+
+    color: var(--txt-color-black);
+    background-color: var(--background-color-white);
+}
+
+.reserve-reserve-text a:hover {
+    color: var(--txt-color-white);
+    background-color: var(--background-color-black);
+}
