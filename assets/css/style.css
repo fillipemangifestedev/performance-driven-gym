@@ -793,6 +793,10 @@ footer {
     border-right: 1px solid var(--background-color-black);
 }
 
+.sessions-div {
+    border-left: 1px solid var(--background-color-black);
+}
+
 .sessions-div-2 {
     gap: 12px;
 }
@@ -842,8 +846,9 @@ footer {
 
     border-radius: 7.25px;
 
-    transition: 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
 
+    color: transparent;
     background-color: var(--background-color-blue);
 }
 
@@ -890,7 +895,7 @@ footer {
     width: 780px;
 }
 
-.reserve-reserve-text a {
+.reserve-reserve-text button {
     padding: 12px 17px;
 
     border-radius: 7.25px;
@@ -901,7 +906,111 @@ footer {
     background-color: var(--background-color-white);
 }
 
-.reserve-reserve-text a:hover {
+.reserve-reserve-text button:hover {
     color: var(--txt-color-white);
     background-color: var(--background-color-black);
+}
+
+/* form */
+.form-help {
+    position: fixed;
+
+    z-index: 4;
+
+    top: 40%;
+    left: -350px;
+
+    transform: none;
+
+    background-color: var(--background-color-light-grey);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    width: min(350px, calc(100vw - 32px));
+    max-height: 58vh;
+
+    overflow-y: auto;
+
+    transition: 0.5s left ease-in-out;
+}
+
+.form-help input,
+.form-preços {
+    width: 100%;
+    height: 44px;
+
+    padding-left: 10px;
+
+    font-size: 16px;
+
+    appearance: none;
+
+    border-radius: 5px;
+    border: 1px solid var(--txt-color-blue);
+
+    outline-color: var(--background-color-blue);
+}
+
+.form-help textarea {
+    width: 100%;
+    height: 100px;
+
+    padding: 10px 0 0 10px;
+
+    font-size: 16px;
+
+    resize: vertical;
+
+    border-radius: 5px;
+    border: 1px solid var(--background-color-blue);
+
+    outline-color: var(--background-color-blue);
+}
+
+.form-help .form-reserve-button {
+    width: 100%;
+    margin-top: 0;
+}
+
+.form-reserve-button {
+    padding: 12px 17px;
+
+    border-radius: 7.25px;
+
+    transition: 0.5s ease;
+
+    color: var(--txt-color-black);
+    background-color: var(--background-color-blue);
+}
+
+.form-reserve-button:hover {
+    color: var(--txt-color-white);
+    background-color: var(--background-color-black);
+}
+
+/* mask */
+.form-mask {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
+    z-index: 3;
+
+    visibility: hidden;
+
+    cursor: pointer;
+
+    transition: 0.5s visibility ease-in-out;
 }

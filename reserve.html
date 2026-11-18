@@ -56,7 +56,7 @@
                     </div>
                 </div>
 
-                <button>RESERVE SEU LUGAR</button>
+                <button>R$ 75,99</button>
             </div>
 
             <div class="sessions-div-2">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <button>RESERVE SEU LUGAR</button>
+                <button>R$ 99,99</button>
             </div>
 
             <div class="sessions-div-3">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                <button>RESERVE SEU LUGAR</button>
+                <button>R$ 9,99</button>
             </div>
         </section>
 
@@ -99,7 +99,7 @@
                 <p>Receba orientação personalizada e programas feitos sob medida para desbloquear seu potencial primal
                     individual. Nossos treinadores especialistas vão te guiar em cada passo do caminho.</p>
 
-                <a href="reserve.html">RESERVE SEU LUGAR</a>
+                <button class="reserve-button">RESERVE SEU LUGAR</button>
             </div>
         </section>
     </main>
@@ -155,6 +155,25 @@
             </div>
         </section>
     </footer>
+
+    <!-- form -->
+    <form class="form-help">
+        <select class="form-preços">
+            <option value="">-- Selecione uma sessão --</option>
+            <option value="">-- Força - R$ 75,99 --</option>
+            <option value="">-- Condicionamento - R$ 99,99 --</option>
+            <option value="">-- Aula Comunitária - R$ 9,99 --</option>
+        </select>
+        <input class="input-name" type="text" name="nome" placeholder="SEU NOME">
+        <input class="input-email" type="email" name="email" placeholder=" SEU EMAIL">
+        <textarea class="input-text" name="duvida"
+            placeholder="DIGITE O QUE MAIS TE INCOMODA E QUER MELHORAR!"></textarea>
+
+        <button class="form-reserve-button" type="submit">RESERVE SEU LUGAR</button>
+    </form>
+
+    <!-- mask -->
+    <div class="form-mask"></div>
 
     <script src="./assets/js/script.js"></script>
 </body>
