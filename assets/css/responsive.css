@@ -1,0 +1,15 @@
+/* ================================================
+ RESPONSIVE (desktop-first)
+   ================================================ */
+
+/* ---------- ate 1280px ---------- */
+@media screen and (max-width:1280px) {}
+
+/* ---------- ate 1024px (tablet) ---------- */
+@media screen and (max-width:1024px) {}
+
+/* ---------- ate 768px (tablet pequeno) ---------- */
+@media screen and (max-width:768px) {}
+
+/* ---------- ate 480px (celular) ---------- */
+@media screen and (max-width:480px) {}
