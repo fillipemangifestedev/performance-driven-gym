@@ -5,11 +5,6 @@ const openForm = document.querySelector('.reserve-button');
 const form = document.querySelector('.form-help');
 const closeForm = document.querySelector('.form-mask');
 
-const nameInput = document.querySelector('.input-name');
-const emailInput = document.querySelector('.input-email');
-const textareaInput = document.querySelector('.input-text');
-const sendForm = document.querySelector('.form-reserve-button');
-
 // functions
 function onForm() {
     const viewForm = openForm
@@ -21,14 +16,14 @@ function onForm() {
     }
 };
 
-function forwardForm() {
-    const nameText = nameInput.value
-    const emailText = emailInput.value
-    const textText = textareaInput.value
+function forwardForm(event) {
+    event.preventDefault();
 
-    if (nameText && emailText && textText) {
-        return;
-    };
+    console.log('Formulário enviado com sucesso!');
+
+    form.reset();
+
+    offForm()
 };
 
 function offForm() {
@@ -39,9 +34,22 @@ function offForm() {
         form.style.transform = "none";
         closeForm.style.visibility = "hidden";
     }
+
+    form.reset();
 };
 
 // events
 openForm.addEventListener('click', onForm);
-sendForm.addEventListener('click', forwardForm);
+form.addEventListener('submit', forwardForm);
 closeForm.addEventListener('click', offForm);
+
+window.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        offForm();
+    }
+});
+
+// mask
+$(document).ready(function () {
+    $('.input-number').mask('(00) 0 0000-0000');
+});
