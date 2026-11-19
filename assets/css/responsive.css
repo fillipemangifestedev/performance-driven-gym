@@ -2,48 +2,279 @@
  RESPONSIVE (desktop-first)
    ================================================ */
 
-/* index.html */
-
-/* ---------- ate 1280px ---------- */
-@media screen and (max-width:1280px) {}
-
-/* ---------- ate 1024px (tablet) ---------- */
-@media screen and (max-width:1024px) {}
+/* GLOBAL (header + footer, presentes em todas as paginas) */
 
 /* ---------- ate 768px (tablet pequeno) ---------- */
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+  header {
+    padding: 16px;
+  }
+
+  nav {
+    gap: 12px 24px;
+  }
+
+  footer {
+    padding: 30px 16px;
+  }
+
+  .contact {
+    flex-direction: column;
+
+    gap: 32px;
+  }
+
+  .contact-hours {
+    align-items: flex-start;
+  }
+
+  .beginning,
+  .comunity,
+  .beginning-about,
+  .beginning-reserve {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 
 /* ---------- ate 480px (celular) ---------- */
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: space-between;
+
+    gap: 12px 16px;
+    width: 100%;
+  }
+
+  .nav-button {
+    padding: 10px 14px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* index.html */
+
+/* ---------- ate 1024px (tablet) ---------- */
+@media screen and (max-width:1024px) {
+
+  .about,
+  .class {
+    flex-direction: column;
+
+    min-height: 0;
+  }
+
+  .about-img,
+  .class-img {
+    flex: 0 0 auto;
+
+    min-height: 0;
+    aspect-ratio: 2 / 1;
+  }
+
+  .about-text,
+  .class-class {
+    flex: 0 0 auto;
+
+    min-width: 0;
+  }
+
+  .class-class {
+    border-right: none;
+    border-bottom: var(--line);
+  }
+
+  .experience {
+    flex-wrap: wrap;
+
+    min-height: 0;
+  }
+
+  .experience-div {
+    flex: 1 1 50%;
+
+    border-bottom: var(--line);
+  }
+
+  .experience-div:nth-child(2) {
+    border-right: none;
+  }
+
+  .experience-img {
+    flex: 1 1 100%;
+
+    aspect-ratio: 2 / 1;
+  }
+}
+
+/* ---------- ate 768px (tablet pequeno) ---------- */
+@media screen and (max-width:768px) {
+
+  .about-img,
+  .class-img,
+  .experience-img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .about-text {
+    gap: 32px;
+  }
+
+  .experience-div {
+    flex-basis: 100%;
+
+    gap: 32px;
+
+    border-right: none;
+  }
+}
+
+/* ---------- ate 480px (celular) ---------- */
+@media screen and (max-width:480px) {
+
+  .about-img,
+  .class-img,
+  .experience-img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-text,
+  .experience-div,
+  .class-about {
+    padding: 16px;
+  }
+
+  .class-title {
+    padding: 24px 16px;
+  }
+
+  .class-class a {
+    padding: 32px 16px 24px;
+  }
+
+  .reserve-text a {
+    align-self: stretch;
+  }
+}
 
 /*================================================================================= */
 
 /* about.html */
 
-/* ---------- ate 1280px ---------- */
-@media screen and (max-width:1280px) {}
-
 /* ---------- ate 1024px (tablet) ---------- */
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+
+  .info,
+  .info-2 {
+    flex-direction: column;
+  }
+
+  .info-text,
+  .info-img,
+  .info-2-img,
+  .info-2-text {
+    flex: 0 0 auto;
+  }
+
+  .info-img,
+  .info-2-img {
+    min-height: 0;
+    aspect-ratio: 2 / 1;
+  }
+
+  .info-2-text {
+    margin-left: 0;
+    padding: 24px var(--gutter) 32px;
+  }
+}
 
 /* ---------- ate 768px (tablet pequeno) ---------- */
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+
+  .info-img,
+  .info-2-img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .info-text {
+    gap: 32px;
+  }
+
+  .image img {
+    min-height: 220px;
+  }
+}
 
 /* ---------- ate 480px (celular) ---------- */
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+
+  .info-img,
+  .info-2-img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .info-text {
+    padding: 24px 16px;
+  }
+
+  .info-2-text {
+    padding: 24px 16px 32px;
+  }
+
+  .about-reserve-text a {
+    align-self: stretch;
+  }
+}
 
 /*================================================================================ */
 
 /* reserve.html */
 
-/* ---------- ate 1280px ---------- */
-@media screen and (max-width:1280px) {}
-
 /* ---------- ate 1024px (tablet) ---------- */
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+  .sessions>div {
+    gap: 32px;
+    padding: 24px 20px;
+  }
+
+  .sessions>div>div {
+    gap: 48px;
+  }
+}
 
 /* ---------- ate 768px (tablet pequeno) ---------- */
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+  .sessions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sessions>div {
+    padding: 24px 16px;
+
+    border-right: none;
+    border-bottom: var(--line);
+  }
+
+  .sessions>div:first-child {
+    border-left: none;
+  }
+
+  .sessions>div:last-child {
+    border-bottom: none;
+  }
+}
 
 /* ---------- ate 480px (celular) ---------- */
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+  .reserve-reserve-text button {
+    align-self: stretch;
+  }
+}

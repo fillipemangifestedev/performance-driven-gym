@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Reserve sua sessão de força, condicionamento ou aula comunitária na Primal Training.">
+    <meta name="theme-color" content="#E9ECFF">
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -22,14 +25,14 @@
 <body>
     <!-- header -->
     <header>
-        <div>
-            <img src="./assets/img/vector/logo/Logo.png" alt="logo-header">
-        </div>
+        <a href="index.html" aria-label="PrimalTraining - página inicial">
+            <img src="./assets/img/vector/logo/Logo.png" alt="PrimalTraining">
+        </a>
 
         <nav>
             <a class="nav-link" href="index.html">Início</a>
             <a class="nav-link" href="about.html">Sobre</a>
-            <a class="nav-button" href="reserve.html">Garanta seu lugar</a>
+            <a class="nav-button" href="reserve.html" aria-current="page">Garanta seu lugar</a>
         </nav>
     </header>
 
@@ -56,7 +59,7 @@
                     </div>
                 </div>
 
-                <button>R$ 75,99</button>
+                <button type="button">R$ 75,99</button>
             </div>
 
             <div class="sessions-div-2">
@@ -72,7 +75,7 @@
                     </div>
                 </div>
 
-                <button>R$ 99,99</button>
+                <button type="button">R$ 99,99</button>
             </div>
 
             <div class="sessions-div-3">
@@ -87,7 +90,7 @@
                     </div>
                 </div>
 
-                <button>R$ 9,99</button>
+                <button type="button">R$ 9,99</button>
             </div>
         </section>
 
@@ -99,7 +102,7 @@
                 <p>Receba orientação personalizada e programas feitos sob medida para desbloquear seu potencial primal
                     individual. Nossos treinadores especialistas vão te guiar em cada passo do caminho.</p>
 
-                <button class="reserve-button">RESERVE SEU LUGAR</button>
+                <button class="reserve-button" type="button">RESERVE SEU LUGAR</button>
             </div>
         </section>
     </main>
@@ -108,8 +111,8 @@
     <footer>
         <!-- logo -->
         <section class="logo">
-            <img src="./assets/img/vector/logo/Vector (1).png" alt="vector-logo">
-            <img src="./assets/img/vector/logo/PrimalTraining.png" alt="PrimalTraining">
+            <img src="./assets/img/vector/logo/Vector (1).png" alt="vector-logo" loading="lazy" decoding="async">
+            <img src="./assets/img/vector/logo/PrimalTraining.png" alt="PrimalTraining" loading="lazy" decoding="async">
         </section>
 
         <!-- contact -->
@@ -119,7 +122,7 @@
 
                 <div class="address">
                     <a href="mailto:seuemail@exemplo.com">Email: hello@figma.com</a>
-                    <a href="tel:+10010101-0101">Telefone: (203) 555-5555</a>
+                    <a href="tel:+12935555555">Telefone: (12) 9 3555-5555</a>
                 </div>
             </div>
 
@@ -147,10 +150,10 @@
                 <h5>SOCIAL</h5>
 
                 <div class="social-link">
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                    <a href="https://x.com/" target="_blank">X</a>
-                    <a href="https://br.linkedin.com/" target="_blank">Linkedin</a>
-                    <a href="https://open.spotify.com/intl-pt/" target="_blank">Spotify</a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a>
+                    <a href="https://br.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    <a href="https://open.spotify.com/intl-pt/" target="_blank" rel="noopener noreferrer">Spotify</a>
                 </div>
             </div>
         </section>
@@ -159,15 +162,17 @@
     <!-- form -->
     <form class="form-help" type="submit" action="https://formcarry.com/s/_xdDOt3_zpa" method="POST"
         enctype="multipart/form-data">
-        <select class="form-select" required>
-            <option class="select-option" value="">-- Selecione uma sessão --</option>
+        <select class="form-select" name="sessao" aria-label="Sessão" required>
+            <option class="select-option" value="" selected disabled>-- Selecione uma sessão --</option>
             <option value="forca">-- Força - R$ 75,99 --</option>
             <option value="condicionamento">-- Condicionamento - R$ 99,99 --</option>
             <option value="aula">-- Aula Comunitária - R$ 9,99 --</option>
         </select>
-        <input class="input-name" type="text" name="nome" placeholder="SEU NOME" required>
+        <input class="input-name" type="text" name="nome" placeholder="SEU NOME" aria-label="Seu nome"
+            autocomplete="name" required>
         <input class="input-number" type="tel" name="telefone" placeholder="(00) 0 0000-0000" required>
-        <input class="input-email" type="email" name="email" placeholder=" SEU EMAIL" required>
+        <input class="input-email" type="email" name="email" placeholder=" SEU EMAIL" aria-label="Seu email"
+            autocomplete="email" required>
         <input class="input-data" type="date" name="data" required>
         <!-- <input type="datetime-local" name="datahora" required> -->
         <select class="form-select" name="hora" required>
@@ -189,8 +194,8 @@
             <option value="19:00">19:00</option>
             <option value="20:00">20:00</option>
         </select>
-        <textarea class="input-text" name="problema" placeholder="DIGITE O QUE MAIS TE INCOMODA E QUER MELHORAR!"
-            required></textarea>
+        <textarea class="input-text" name="problema" aria-label="O que mais te incomoda e quer melhorar"
+            placeholder="DIGITE O QUE MAIS TE INCOMODA E QUER MELHORAR!" required></textarea>
 
         <button class="form-reserve-button" type="submit">RESERVE SEU LUGAR</button>
     </form>
@@ -204,7 +209,7 @@
     <!-- Importa jQuery Mask Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js" defer></script>
 </body>
 
 </html>
