@@ -160,10 +160,10 @@
     <form class="form-help" type="submit" action="https://formcarry.com/s/_xdDOt3_zpa" method="POST"
         enctype="multipart/form-data">
         <select class="form-select" required>
-            <option value="">-- Selecione uma sessão --</option>
-            <option value="">-- Força - R$ 75,99 --</option>
-            <option value="">-- Condicionamento - R$ 99,99 --</option>
-            <option value="">-- Aula Comunitária - R$ 9,99 --</option>
+            <option class="select-option" value="">-- Selecione uma sessão --</option>
+            <option value="forca">-- Força - R$ 75,99 --</option>
+            <option value="condicionamento">-- Condicionamento - R$ 99,99 --</option>
+            <option value="aula">-- Aula Comunitária - R$ 9,99 --</option>
         </select>
         <input class="input-name" type="text" name="nome" placeholder="SEU NOME" required>
         <input class="input-number" type="tel" name="telefone" placeholder="(00) 0 0000-0000" required>
@@ -171,7 +171,7 @@
         <input class="input-data" type="date" name="data" required>
         <!-- <input type="datetime-local" name="datahora" required> -->
         <select class="form-select" name="hora" required>
-            <option value="">-- Selecione um horário --</option>
+            <option class="select-option" value="">-- Selecione um horário --</option>
             <option value="05:00">05:00</option>
             <option value="06:00">06:00</option>
             <option value="07:00">07:00</option>

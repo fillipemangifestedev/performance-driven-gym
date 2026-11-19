@@ -957,6 +957,10 @@ footer {
     outline-color: var(--background-color-blue);
 }
 
+.select-option {
+    text-align: center;
+}
+
 .form-help textarea {
     width: 100%;
     height: 100px;
@@ -992,6 +996,22 @@ footer {
 .form-reserve-button:hover {
     color: var(--txt-color-white);
     background-color: var(--background-color-black);
+}
+
+.form-help,
+.form-select,
+.input-name,
+.input-number,
+.input-email,
+.input-data,
+.input-text {
+    font-size: var(--a-btn-font-size);
+    font-weight: var(--a-btn-font-weight);
+    font-family: var(--a-btn-font-family);
+    line-height: var(--a-btn-line-height);
+    letter-spacing: var(--a-btn-letter-spacing);
+
+    color: var(--txt-color-black);
 }
 
 /* mask */
