@@ -160,23 +160,30 @@
     </footer>
 
     <!-- form -->
-    <form class="form-help" type="submit" action="https://formcarry.com/s/_xdDOt3_zpa" method="POST"
-        enctype="multipart/form-data">
+    <form class="form-help" action="https://formcarry.com/s/_xdDOt3_zpa" method="POST" enctype="multipart/form-data"
+        role="dialog" aria-modal="true" aria-label="Reserve seu lugar" inert>
         <select class="form-select" name="sessao" aria-label="Sessão" required>
             <option class="select-option" value="" selected disabled>-- Selecione uma sessão --</option>
             <option value="forca">-- Força - R$ 75,99 --</option>
             <option value="condicionamento">-- Condicionamento - R$ 99,99 --</option>
             <option value="aula">-- Aula Comunitária - R$ 9,99 --</option>
         </select>
+
         <input class="input-name" type="text" name="nome" placeholder="SEU NOME" aria-label="Seu nome"
             autocomplete="name" required>
-        <input class="input-number" type="tel" name="telefone" placeholder="(00) 0 0000-0000" required>
+
+        <input class="input-number" type="tel" name="telefone" placeholder="(00) 0 0000-0000" aria-label="Seu telefone"
+            autocomplete="tel" inputmode="tel" maxlength="16" pattern="\(\d{2}\) \d \d{4}-\d{4}"
+            title="Use o formato (00) 0 0000-0000" required>
+
         <input class="input-email" type="email" name="email" placeholder=" SEU EMAIL" aria-label="Seu email"
             autocomplete="email" required>
-        <input class="input-data" type="date" name="data" required>
+
+        <input class="input-data" type="date" name="data" aria-label="Data da sessão" required>
         <!-- <input type="datetime-local" name="datahora" required> -->
+
         <select class="form-select" name="hora" required>
-            <option class="select-option" value="">-- Selecione um horário --</option>
+            <option class="select-option" value="" selected disabled>-- Selecione um horário --</option>
             <option value="05:00">05:00</option>
             <option value="06:00">06:00</option>
             <option value="07:00">07:00</option>
@@ -194,20 +201,17 @@
             <option value="19:00">19:00</option>
             <option value="20:00">20:00</option>
         </select>
+
         <textarea class="input-text" name="problema" aria-label="O que mais te incomoda e quer melhorar"
             placeholder="DIGITE O QUE MAIS TE INCOMODA E QUER MELHORAR!" required></textarea>
+
+        <p class="form-status" role="status" aria-live="polite"></p>
 
         <button class="form-reserve-button" type="submit">RESERVE SEU LUGAR</button>
     </form>
 
     <!-- mask -->
     <div class="form-mask"></div>
-
-    <!-- Importa jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Importa jQuery Mask Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
     <script src="./assets/js/script.js" defer></script>
 </body>
