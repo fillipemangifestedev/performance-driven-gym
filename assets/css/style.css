@@ -22,61 +22,41 @@
     --secondary-font: "Geist", sans-serif;
     --tertiary-font: "Geist Mono", monospace;
 
-    --h1-font-size: clamp(2.75rem, 8.06vw, 7.25rem);
-    --h1-font-weight: 800;
-    --h1-font-family: var(--primary-font);
-    --h1-line-height: 110%;
-    --h1-letter-spacing: -0.05em;
-
-    --h2-font-size: clamp(1.75rem, 1.6vw + 1.4rem, 2.8125rem);
-    --h2-font-weight: 700;
-    --h2-font-family: var(--primary-font);
-    --h2-line-height: 91%;
-    --h2-letter-spacing: -0.03em;
-
-    --h3-font-size: clamp(2rem, 2.2vw + 1.6rem, 3.5625rem);
-    --h3-font-weight: 700;
-    --h3-font-family: var(--primary-font);
-    --h3-line-height: 100%;
-    --h3-letter-spacing: -0.05em;
-
-    --h4-font-size: clamp(1.25rem, 0.5vw + 1.1rem, 1.5625rem);
-    --h4-font-weight: 700;
-    --h4-font-family: var(--primary-font);
-    --h4-line-height: 91%;
-    --h4-letter-spacing: -0.03em;
-
-    --h5-font-size: clamp(1.125rem, 0.4vw + 1rem, 1.375rem);
-    --h5-font-weight: 700;
-    --h5-font-family: var(--primary-font);
-    --h5-line-height: 131%;
-    --h5-letter-spacing: -0.03em;
-
-    --p1-font-size: 1.1875rem;
-    --p1-font-weight: 400;
-    --p1-font-family: var(--secondary-font);
-    --p1-line-height: 131%;
-    --p1-letter-spacing: -0.03em;
-
-    --p2-font-size: 1.0625rem;
-    --p2-font-weight: 400;
-    --p2-font-family: var(--secondary-font);
-    --p2-line-height: 131%;
-    --p2-letter-spacing: 0.01em;
-
+    /* font-size */
     --p3-font-size: 0.875rem;
-    --p3-font-weight: 700;
-    --p3-font-family: var(--secondary-font);
-    --p3-line-height: 131%;
-    --p3-letter-spacing: 0.01em;
-
     --a-btn-font-size: 0.9375rem;
-    --a-btn-font-weight: 400;
+    --p2-font-size: 1.0625rem;
+    --p1-font-size: 1.1875rem;
+    --h5-font-size: clamp(1.125rem, 0.4vw + 1rem, 1.375rem);
+    --h4-font-size: clamp(1.25rem, 0.5vw + 1.1rem, 1.5625rem);
+    --h2-font-size: clamp(1.75rem, 1.6vw + 1.4rem, 2.8125rem);
+    --h3-font-size: clamp(2rem, 2.2vw + 1.6rem, 3.5625rem);
+    --h1-font-size: clamp(2.75rem, 8.06vw, 7.25rem);
+
+    /* font-weight */
+    --p-1-2-a-btn-font-weight: 400;
+    --h-2-3-4-5-p-3-font-weight: 700;
+    --h1-font-weight: 800;
+
+    /* font-family */
+    --h-1-2-3-4-5-font-family: var(--primary-font);
+    --p-1-2-3-font-family: var(--secondary-font);
     --a-btn-font-family: var(--tertiary-font);
-    --a-btn-line-height: 110%;
+
+    /* line-height */
+    --h-2-4-line-height: 91%;
+    --h3-line-height: 100%;
+    --h1-a-btn-line-height: 110%;
+    --h5-p-1-2-3-line-height: 131%;
+
+    /* letter-spacing */
+    --p-2-3-letter-spacing: 0.01em;
     --a-btn-letter-spacing: -0.01em;
+    --h-2-4-5-p1-letter-spacing: -0.03em;
+    --h-1-3-letter-spacing: -0.05em;
 }
 
+/*================================================================================= */
 /* typography global */
 h1,
 h2,
@@ -87,28 +67,28 @@ h5 {
 }
 
 h1 {
-    font: var(--h1-font-weight) var(--h1-font-size)/var(--h1-line-height) var(--h1-font-family);
-    letter-spacing: var(--h1-letter-spacing);
+    font: var(--h1-font-weight) var(--h1-font-size)/var(--h1-a-btn-line-height) var(--h-1-2-3-4-5-font-family);
+    letter-spacing: var(--h-1-3-letter-spacing);
 }
 
 h2 {
-    font: var(--h2-font-weight) var(--h2-font-size)/var(--h2-line-height) var(--h2-font-family);
-    letter-spacing: var(--h2-letter-spacing);
+    font: var(--h-2-3-4-5-p-3-font-weight) var(--h2-font-size)/var(--h-2-4-line-height) var(--h-1-2-3-4-5-font-family);
+    letter-spacing: var(--h-2-4-5-p1-letter-spacing);
 }
 
 h3 {
-    font: var(--h3-font-weight) var(--h3-font-size)/var(--h3-line-height) var(--h3-font-family);
-    letter-spacing: var(--h3-letter-spacing);
+    font: var(--h-2-3-4-5-p-3-font-weight) var(--h3-font-size)/var(--h3-line-height) var(--h-1-2-3-4-5-font-family);
+    letter-spacing: var(--h-1-3-letter-spacing);
 }
 
 h4 {
-    font: var(--h4-font-weight) var(--h4-font-size)/var(--h4-line-height) var(--h4-font-family);
-    letter-spacing: var(--h4-letter-spacing);
+    font: var(--h-2-3-4-5-p-3-font-weight) var(--h4-font-size)/var(--h-2-4-line-height) var(--h-1-2-3-4-5-font-family);
+    letter-spacing: var(--h-2-4-5-p1-letter-spacing);
 }
 
 h5 {
-    font: var(--h5-font-weight) var(--h5-font-size)/var(--h5-line-height) var(--h5-font-family);
-    letter-spacing: var(--h5-letter-spacing);
+    font: var(--h-2-3-4-5-p-3-font-weight) var(--h5-font-size)/var(--h5-p-1-2-3-line-height) var(--h-1-2-3-4-5-font-family);
+    letter-spacing: var(--h-2-4-5-p1-letter-spacing);
 }
 
 a {
@@ -125,10 +105,11 @@ button {
 
 a,
 button {
-    font: var(--a-btn-font-weight) var(--a-btn-font-size)/var(--a-btn-line-height) var(--a-btn-font-family);
+    font: var(--p-1-2-a-btn-font-weight) var(--a-btn-font-size)/var(--h1-a-btn-line-height) var(--a-btn-font-family);
     letter-spacing: var(--a-btn-letter-spacing);
 }
 
+/*================================================================================= */
 /* reset global */
 *,
 *::before,
@@ -150,7 +131,6 @@ img {
 }
 
 /*================================================================================ */
-
 /* index.html */
 
 /* start */
@@ -300,8 +280,8 @@ h1 span,
 .about-text-p p,
 .experience-div p,
 .sessions-text-text p {
-    font: var(--p1-font-weight) var(--p1-font-size)/var(--p1-line-height) var(--p1-font-family);
-    letter-spacing: var(--p1-letter-spacing);
+    font: var(--p-1-2-a-btn-font-weight) var(--p1-font-size)/var(--h5-p-1-2-3-line-height) var(--p-1-2-3-font-family);
+    letter-spacing: var(--h-2-4-5-p1-letter-spacing);
 }
 
 .about {
@@ -411,8 +391,8 @@ h1 span,
 }
 
 .comunity h2 {
-    font: var(--h1-font-weight) var(--h1-font-size)/var(--h1-line-height) var(--h1-font-family);
-    letter-spacing: var(--h1-letter-spacing);
+    font: var(--h1-font-weight) var(--h1-font-size)/var(--h1-a-btn-line-height) var(--h-1-2-3-4-5-font-family);
+    letter-spacing: var(--h-1-3-letter-spacing);
 }
 
 /* class */
@@ -463,8 +443,8 @@ h1 span,
 .about-reserve-text p,
 .reserve-text p,
 .reserve-reserve-text p {
-    font: var(--p2-font-weight) var(--p2-font-size)/var(--p2-line-height) var(--p2-font-family);
-    letter-spacing: var(--p2-letter-spacing);
+    font: var(--p-1-2-a-btn-font-weight) var(--p2-font-size)/var(--h5-p-1-2-3-line-height) var(--p-1-2-3-font-family);
+    letter-spacing: var(--p-2-3-letter-spacing);
 }
 
 .class-class a {
@@ -593,8 +573,8 @@ footer {
 .address,
 .days,
 .hours p {
-    font: var(--p3-font-weight) var(--p3-font-size)/var(--p3-line-height) var(--p3-font-family);
-    letter-spacing: var(--p3-letter-spacing);
+    font: var(--h-2-3-4-5-p-3-font-weight) var(--p3-font-size)/var(--h5-p-1-2-3-line-height) var(--p-1-2-3-font-family);
+    letter-spacing: var(--p-2-3-letter-spacing);
 }
 
 .days-hours {
@@ -611,7 +591,6 @@ footer {
 }
 
 /*================================================================================ */
-
 /* about.html */
 
 /* info */
@@ -711,7 +690,6 @@ footer {
 }
 
 /*================================================================================ */
-
 /* reserve.html */
 
 /* sessions */
@@ -772,6 +750,7 @@ footer {
     color: transparent;
 }
 
+/*================================================================================= */
 /* form */
 .form-help {
     position: fixed;
